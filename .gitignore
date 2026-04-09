@@ -1,0 +1,9 @@
+venv/
+.venv/
+__pycache__/
+.idea/
+*.pyc
+site/
+students/**/venv/
+students/**/.venv/
+.env
