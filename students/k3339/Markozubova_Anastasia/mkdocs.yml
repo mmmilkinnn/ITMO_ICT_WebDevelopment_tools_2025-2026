@@ -1,16 +1,16 @@
-site_name: Markozubova Anastasia | Web Programming Labs
+site_name: Маркозубова Анастасия | Лабораторные работы
 site_description: Отчет по лабораторным работам
-site_author: Anastasia Markozubova
+site_author: Маркозубова Анастасия
 
 theme:
   name: material
   language: ru
   palette:
     - scheme: default
-      primary: teal
-      accent: green
+      primary: deep orange
+      accent: pink
   font:
-    text: Noto Sans
+    text: Rubik
     code: JetBrains Mono
 
 nav:
