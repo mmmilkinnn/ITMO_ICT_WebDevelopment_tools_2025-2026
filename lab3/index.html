@@ -1,0 +1,1582 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Отчет по лабораторным работам">
+      
+      
+        <meta name="author" content="Маркозубова Анастасия">
+      
+      
+      
+        <link rel="prev" href="../lab2/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Лабораторная работа 3 - Маркозубова Анастасия</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Rubik";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href=".." title="Маркозубова Анастасия" class="md-header__button md-logo" aria-label="Маркозубова Анастасия" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Маркозубова Анастасия
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Лабораторная работа 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="pink"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Маркозубова Анастасия" class="md-nav__button md-logo" aria-label="Маркозубова Анастасия" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Маркозубова Анастасия
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Главная
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Лабораторная работа 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Лабораторная работа 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Лабораторная работа 3
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Лабораторная работа 3
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Тема
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Цель работы
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Использованные технологии
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Структура проекта
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Состав Docker Compose
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dockerfile-api-parser-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dockerfile для API и parser-сервиса
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Конфигурация приложения
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель данных
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Подключение к базе данных
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parser-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parser-сервис
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Логика парсинга
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fastapi-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Основное FastAPI-приложение
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Основное FastAPI-приложение">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-hackathons" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /hackathons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-parserparse" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /parser/parse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-parsertasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /parser/tasks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-parsertaskstask_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /parser/tasks/{task_id}
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#celery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Настройка Celery
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Периодические задачи
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Как запустить проект
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swagger" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проверка через Swagger
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Проверка через Swagger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проверка основного API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проверка списка сохраненных записей
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parser-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проверка синхронного вызова parser-сервиса
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#celery_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проверка асинхронного вызова через Celery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parser-_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проверка parser-сервиса напрямую
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Что показывать на защите
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Вывод
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Тема
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Цель работы
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Использованные технологии
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Структура проекта
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Состав Docker Compose
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dockerfile-api-parser-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dockerfile для API и parser-сервиса
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Конфигурация приложения
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модель данных
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Подключение к базе данных
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parser-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parser-сервис
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Логика парсинга
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fastapi-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Основное FastAPI-приложение
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Основное FastAPI-приложение">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-hackathons" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /hackathons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-parserparse" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /parser/parse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-parsertasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /parser/tasks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-parsertaskstask_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /parser/tasks/{task_id}
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#celery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Настройка Celery
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Периодические задачи
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Как запустить проект
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swagger" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проверка через Swagger
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Проверка через Swagger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проверка основного API
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проверка списка сохраненных записей
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parser-_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проверка синхронного вызова parser-сервиса
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#celery_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проверка асинхронного вызова через Celery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parser-_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Проверка parser-сервиса напрямую
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Что показывать на защите
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Вывод
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="3">Лабораторная Работа 3<a class="headerlink" href="#3" title="Permanent link">&para;</a></h1>
+<h2 id="_1">Тема<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Упаковка FastAPI-приложения в Docker, работа с источниками данных и очереди.</p>
+<blockquote>
+<p>Выполнила: Маркозубова Анастасия</p>
+</blockquote>
+<h2 id="_2">Цель работы<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Целью лабораторной работы является упаковка FastAPI-приложения, базы данных и парсера в Docker, а также настройка взаимодействия между сервисами. В работе реализован прямой вызов парсера через HTTP и асинхронный запуск парсинга через очередь задач Celery с брокером Redis.</p>
+<p>В лабораторной работе выполнены три основные части:</p>
+<ul>
+<li>упаковка FastAPI-приложения, parser-сервиса и PostgreSQL в Docker;</li>
+<li>вызов parser-сервиса из основного FastAPI-приложения;</li>
+<li>вызов parser-сервиса через очередь Celery и Redis.</li>
+</ul>
+<h2 id="_3">Использованные технологии<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Python 3.12</li>
+<li>FastAPI</li>
+<li>Uvicorn</li>
+<li>PostgreSQL</li>
+<li>SQLAlchemy</li>
+<li>Pydantic</li>
+<li>Requests</li>
+<li>Docker</li>
+<li>Docker Compose</li>
+<li>Redis</li>
+<li>Celery</li>
+<li>Celery Beat</li>
+</ul>
+<h2 id="_4">Структура проекта<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<pre><code class="language-text">lab3/
+├── app/
+│   ├── __init__.py
+│   ├── api_service.py
+│   ├── celery_app.py
+│   ├── config.py
+│   ├── database.py
+│   ├── models.py
+│   ├── parser_logic.py
+│   └── parser_service.py
+├── Dockerfile.api
+├── Dockerfile.parser
+├── docker-compose.yml
+├── README.md
+└── requirements.txt
+</code></pre>
+<p>Проект разделен на несколько сервисов. Основное приложение принимает запросы пользователя, parser-сервис выполняет парсинг страниц, PostgreSQL хранит результаты, Redis используется для очереди задач, Celery worker выполняет фоновые задачи, а Celery Beat запускает периодический парсинг.</p>
+<h2 id="docker-compose">Состав Docker Compose<a class="headerlink" href="#docker-compose" title="Permanent link">&para;</a></h2>
+<p>Все сервисы описаны в файле:</p>
+<pre><code class="language-text">lab3/docker-compose.yml
+</code></pre>
+<p>В <code>docker-compose.yml</code> настроены следующие контейнеры:</p>
+<table>
+<thead>
+<tr>
+<th>Сервис</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>db</code></td>
+<td>база данных PostgreSQL</td>
+</tr>
+<tr>
+<td><code>redis</code></td>
+<td>брокер сообщений и хранилище результатов Celery</td>
+</tr>
+<tr>
+<td><code>parser</code></td>
+<td>отдельное FastAPI-приложение для парсинга</td>
+</tr>
+<tr>
+<td><code>api</code></td>
+<td>основное FastAPI-приложение</td>
+</tr>
+<tr>
+<td><code>celery_worker</code></td>
+<td>обработчик фоновых задач</td>
+</tr>
+<tr>
+<td><code>celery_beat</code></td>
+<td>запуск периодических задач по расписанию</td>
+</tr>
+</tbody>
+</table>
+<p>Сервис <code>db</code> использует образ <code>postgres:16-alpine</code>. Для него задана база данных <code>hackathon_lab3</code>, пользователь <code>postgres</code> и пароль <code>1234</code>. Внешний порт базы данных:</p>
+<pre><code class="language-text">localhost:5433
+</code></pre>
+<p>Внутри Docker-сети база доступна по адресу:</p>
+<pre><code class="language-text">db:5432
+</code></pre>
+<p>Для PostgreSQL добавлен <code>healthcheck</code>, чтобы остальные сервисы начинали работу после готовности базы данных.</p>
+<p>Сервис <code>redis</code> использует образ <code>redis:7-alpine</code>. Он доступен внутри Docker-сети как:</p>
+<pre><code class="language-text">redis:6379
+</code></pre>
+<p>Снаружи Redis проброшен на порт:</p>
+<pre><code class="language-text">localhost:6380
+</code></pre>
+<p>Сервис <code>parser</code> собирается из файла <code>Dockerfile.parser</code> и запускается на порту <code>8001</code>. Он подключается к базе данных через переменную окружения:</p>
+<pre><code class="language-text">DATABASE_URL=postgresql+psycopg://postgres:1234@db:5432/hackathon_lab3
+</code></pre>
+<p>Сервис <code>api</code> собирается из файла <code>Dockerfile.api</code> и запускается на порту <code>8000</code>. Для связи с другими контейнерами используются переменные окружения:</p>
+<pre><code class="language-text">DATABASE_URL=postgresql+psycopg://postgres:1234@db:5432/hackathon_lab3
+PARSER_SERVICE_URL=http://parser:8001
+CELERY_BROKER_URL=redis://redis:6379/0
+CELERY_RESULT_BACKEND=redis://redis:6379/1
+</code></pre>
+<p>Сервис <code>celery_worker</code> запускает Celery worker командой:</p>
+<pre><code class="language-bash">celery -A app.celery_app.celery_app worker --loglevel=info
+</code></pre>
+<p>Сервис <code>celery_beat</code> запускает планировщик периодических задач:</p>
+<pre><code class="language-bash">celery -A app.celery_app.celery_app beat --loglevel=info
+</code></pre>
+<h2 id="dockerfile-api-parser-">Dockerfile для API и parser-сервиса<a class="headerlink" href="#dockerfile-api-parser-" title="Permanent link">&para;</a></h2>
+<p>Для основного API используется файл:</p>
+<pre><code class="language-text">lab3/Dockerfile.api
+</code></pre>
+<p>В нем указан базовый образ:</p>
+<pre><code class="language-dockerfile">FROM python:3.12-slim
+</code></pre>
+<p>Далее устанавливаются зависимости из <code>requirements.txt</code>, копируется папка <code>app</code> и запускается Uvicorn:</p>
+<pre><code class="language-dockerfile">CMD [&quot;uvicorn&quot;, &quot;app.api_service:app&quot;, &quot;--host&quot;, &quot;0.0.0.0&quot;, &quot;--port&quot;, &quot;8000&quot;]
+</code></pre>
+<p>Для parser-сервиса используется файл:</p>
+<pre><code class="language-text">lab3/Dockerfile.parser
+</code></pre>
+<p>Он устроен так же, но запускает другое FastAPI-приложение:</p>
+<pre><code class="language-dockerfile">CMD [&quot;uvicorn&quot;, &quot;app.parser_service:app&quot;, &quot;--host&quot;, &quot;0.0.0.0&quot;, &quot;--port&quot;, &quot;8001&quot;]
+</code></pre>
+<p>Таким образом, основной API и parser работают как два независимых HTTP-сервиса.</p>
+<h2 id="_5">Конфигурация приложения<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>Настройки вынесены в файл:</p>
+<pre><code class="language-text">lab3/app/config.py
+</code></pre>
+<p>В классе <code>Settings</code> хранятся:</p>
+<ul>
+<li>название проекта;</li>
+<li>строка подключения к PostgreSQL;</li>
+<li>адрес parser-сервиса;</li>
+<li>адрес Redis для Celery broker;</li>
+<li>адрес Redis для Celery result backend.</li>
+</ul>
+<p>Значения читаются из переменных окружения. Это удобно для Docker Compose, потому что внутри контейнеров нельзя обращаться к соседним сервисам через <code>localhost</code>. Вместо этого используются имена сервисов: <code>db</code>, <code>parser</code>, <code>redis</code>.</p>
+<h2 id="_6">Модель данных<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>Модели находятся в файле:</p>
+<pre><code class="language-text">lab3/app/models.py
+</code></pre>
+<p>В проекте используются две ORM-модели:</p>
+<ul>
+<li><code>User</code>;</li>
+<li><code>Hackathon</code>.</li>
+</ul>
+<p>Модель <code>User</code> нужна для связи с хакатонами. В схеме поле <code>organizer_id</code> является обязательным, поэтому для записей, созданных парсером, используется служебный организатор:</p>
+<pre><code class="language-text">lab3-parser@example.com
+</code></pre>
+<p>Модель <code>Hackathon</code> хранит данные о найденном источнике:</p>
+<table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Что хранится</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>заголовок HTML-страницы</td>
+</tr>
+<tr>
+<td><code>source_url</code></td>
+<td>URL, который был передан в парсер</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>краткое описание источника и способа парсинга</td>
+</tr>
+<tr>
+<td><code>start_date</code></td>
+<td>дата создания записи</td>
+</tr>
+<tr>
+<td><code>end_date</code></td>
+<td>дата создания записи + 7 дней</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>значение <code>parsed</code></td>
+</tr>
+<tr>
+<td><code>parser_approach</code></td>
+<td>способ запуска парсера</td>
+</tr>
+<tr>
+<td><code>organizer_id</code></td>
+<td>служебный пользователь-организатор</td>
+</tr>
+</tbody>
+</table>
+<p>Для сохранения результата используется функция:</p>
+<pre><code class="language-python">create_parsed_hackathon(session, url, title, approach)
+</code></pre>
+<p>Она создает запись в таблице <code>hackathons</code>, выполняет <code>session.commit()</code> и возвращает созданный объект.</p>
+<h2 id="_7">Подключение к базе данных<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>Работа с базой данных находится в файле:</p>
+<pre><code class="language-text">lab3/app/database.py
+</code></pre>
+<p>Подключение создается через SQLAlchemy:</p>
+<pre><code class="language-python">engine = create_engine(settings.DATABASE_URL, future=True)
+</code></pre>
+<p>Функция <code>prepare_database()</code> создает таблицы:</p>
+<pre><code class="language-python">Base.metadata.create_all(bind=engine)
+</code></pre>
+<p>Также она создает служебного организатора для записей, которые добавляет parser.</p>
+<p>Функция <code>get_db()</code> используется в основном API как FastAPI dependency. Через нее эндпоинты получают сессию базы данных.</p>
+<h2 id="parser-">Parser-сервис<a class="headerlink" href="#parser-" title="Permanent link">&para;</a></h2>
+<p>Отдельное приложение парсера находится в файле:</p>
+<pre><code class="language-text">lab3/app/parser_service.py
+</code></pre>
+<p>В нем создается отдельный экземпляр FastAPI:</p>
+<pre><code class="language-python">app = FastAPI(title=&quot;Lab 3 Parser Service&quot;)
+</code></pre>
+<p>При старте parser-сервиса вызывается <code>prepare_database()</code>. Это нужно, чтобы таблицы были созданы до обработки запросов.</p>
+<p>У parser-сервиса есть две ручки:</p>
+<table>
+<thead>
+<tr>
+<th>Метод</th>
+<th>URL</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GET</code></td>
+<td><code>/</code></td>
+<td>проверка, что parser-сервис работает</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/parse</code></td>
+<td>запуск парсинга указанного URL</td>
+</tr>
+</tbody>
+</table>
+<p>Ручка <code>POST /parse</code> принимает JSON:</p>
+<pre><code class="language-json">{
+  &quot;url&quot;: &quot;https://devpost.com/hackathons&quot;
+}
+</code></pre>
+<p>Для поля <code>url</code> используется тип <code>HttpUrl</code>, поэтому FastAPI проверяет корректность ссылки.</p>
+<p>После получения запроса parser вызывает:</p>
+<pre><code class="language-python">parse_and_save_url(str(payload.url), &quot;http-parser-service&quot;)
+</code></pre>
+<p>Если внешний сайт недоступен или возвращает ошибку, parser-сервис возвращает HTTP 500.</p>
+<h2 id="_8">Логика парсинга<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>Основная логика находится в файле:</p>
+<pre><code class="language-text">lab3/app/parser_logic.py
+</code></pre>
+<p>В файле есть список стандартных источников:</p>
+<pre><code class="language-python">DEFAULT_URLS = [
+    &quot;https://devpost.com/hackathons&quot;,
+    &quot;https://hackathon.com/&quot;,
+    &quot;https://mlh.io/seasons/2026/events&quot;,
+    &quot;https://www.kaggle.com/competitions&quot;,
+    &quot;https://www.spaceappschallenge.org/&quot;,
+]
+</code></pre>
+<p>Они используются для периодической задачи Celery Beat.</p>
+<p>Для извлечения заголовка страницы используется класс <code>TitleParser</code>, который наследуется от стандартного <code>HTMLParser</code>. Он находит содержимое тега <code>&lt;title&gt;</code>.</p>
+<p>Функция <code>extract_title(html)</code> получает HTML-страницу и возвращает ее заголовок. Если заголовок не найден, возвращается строка:</p>
+<pre><code class="language-text">Untitled hackathon source
+</code></pre>
+<p>Главная функция:</p>
+<pre><code class="language-python">parse_and_save_url(url, approach)
+</code></pre>
+<p>Выполняет следующие действия:</p>
+<ol>
+<li>отправляет GET-запрос к переданному URL;</li>
+<li>проверяет успешность ответа через <code>raise_for_status()</code>;</li>
+<li>извлекает <code>&lt;title&gt;</code> из HTML;</li>
+<li>открывает сессию PostgreSQL;</li>
+<li>сохраняет запись в таблицу <code>hackathons</code>;</li>
+<li>возвращает JSON с результатом.</li>
+</ol>
+<p>Пример ответа:</p>
+<pre><code class="language-json">{
+  &quot;message&quot;: &quot;Parsing completed&quot;,
+  &quot;url&quot;: &quot;https://devpost.com/hackathons&quot;,
+  &quot;title&quot;: &quot;New &amp; upcoming hackathons - Devpost&quot;,
+  &quot;hackathon_id&quot;: 17
+}
+</code></pre>
+<p>Парсер в этой работе не извлекает все карточки хакатонов со страницы. Он сохраняет заголовок страницы как результат парсинга. Этого достаточно для демонстрации связки: внешний источник данных, parser-сервис, PostgreSQL, основной API и очередь задач.</p>
+<h2 id="fastapi-">Основное FastAPI-приложение<a class="headerlink" href="#fastapi-" title="Permanent link">&para;</a></h2>
+<p>Основное приложение находится в файле:</p>
+<pre><code class="language-text">lab3/app/api_service.py
+</code></pre>
+<p>В нем создается FastAPI-приложение:</p>
+<pre><code class="language-python">app = FastAPI(title=settings.PROJECT_NAME)
+</code></pre>
+<p>При старте приложения вызывается <code>prepare_database()</code>, чтобы база была готова к работе.</p>
+<p>Входная схема для запросов парсинга:</p>
+<pre><code class="language-python">class ParseRequest(BaseModel):
+    url: HttpUrl
+</code></pre>
+<p>Схема ответа для сохраненных хакатонов:</p>
+<pre><code class="language-python">class HackathonResponse(BaseModel):
+</code></pre>
+<p>Она возвращает:</p>
+<ul>
+<li><code>id</code>;</li>
+<li><code>title</code>;</li>
+<li><code>source_url</code>;</li>
+<li><code>status</code>;</li>
+<li><code>parser_approach</code>.</li>
+</ul>
+<h3 id="get"><code>GET /</code><a class="headerlink" href="#get" title="Permanent link">&para;</a></h3>
+<p>Проверяет, что основное API работает.</p>
+<p>Ответ:</p>
+<pre><code class="language-json">{
+  &quot;message&quot;: &quot;Lab 3 API is running&quot;
+}
+</code></pre>
+<h3 id="get-hackathons"><code>GET /hackathons</code><a class="headerlink" href="#get-hackathons" title="Permanent link">&para;</a></h3>
+<p>Возвращает список записей из таблицы <code>hackathons</code>.</p>
+<p>Запрос выполняется через SQLAlchemy:</p>
+<pre><code class="language-python">select(Hackathon).order_by(Hackathon.id.desc())
+</code></pre>
+<p>Эта ручка используется для проверки, что результат парсинга действительно сохранился в PostgreSQL.</p>
+<h3 id="post-parserparse"><code>POST /parser/parse</code><a class="headerlink" href="#post-parserparse" title="Permanent link">&para;</a></h3>
+<p>Это синхронный вызов parser-сервиса.</p>
+<p>Основной API принимает JSON:</p>
+<pre><code class="language-json">{
+  &quot;url&quot;: &quot;https://devpost.com/hackathons&quot;
+}
+</code></pre>
+<p>После этого API делает HTTP-запрос в parser-сервис:</p>
+<pre><code class="language-python">requests.post(
+    f&quot;{settings.PARSER_SERVICE_URL}/parse&quot;,
+    json={&quot;url&quot;: str(payload.url)},
+    timeout=30,
+)
+</code></pre>
+<p>В Docker Compose <code>PARSER_SERVICE_URL</code> равен:</p>
+<pre><code class="language-text">http://parser:8001
+</code></pre>
+<p>То есть основной API не парсит страницу сам, а обращается к отдельному контейнеру <code>parser</code>. После завершения парсинга API возвращает результат клиенту.</p>
+<p>Если parser-сервис недоступен, основной API возвращает ошибку <code>502 Bad Gateway</code>.</p>
+<h3 id="post-parsertasks"><code>POST /parser/tasks</code><a class="headerlink" href="#post-parsertasks" title="Permanent link">&para;</a></h3>
+<p>Это асинхронный запуск парсинга через Celery.</p>
+<p>API принимает такой же JSON:</p>
+<pre><code class="language-json">{
+  &quot;url&quot;: &quot;https://mlh.io/seasons/2026/events&quot;
+}
+</code></pre>
+<p>Задача отправляется в очередь:</p>
+<pre><code class="language-python">task = parse_url_task.delay(str(payload.url))
+</code></pre>
+<p>Метод <code>delay()</code> не выполняет парсинг сразу в процессе API. Он отправляет задачу в Redis, после чего <code>celery_worker</code> забирает ее и выполняет в фоне.</p>
+<p>Ответ API:</p>
+<pre><code class="language-json">{
+  &quot;task_id&quot;: &quot;id-задачи&quot;,
+  &quot;status&quot;: &quot;queued&quot;
+}
+</code></pre>
+<h3 id="get-parsertaskstask_id"><code>GET /parser/tasks/{task_id}</code><a class="headerlink" href="#get-parsertaskstask_id" title="Permanent link">&para;</a></h3>
+<p>Эта ручка проверяет состояние фоновой задачи.</p>
+<p>Для получения статуса используется:</p>
+<pre><code class="language-python">AsyncResult(task_id, app=celery_app)
+</code></pre>
+<p>Возможные статусы:</p>
+<ul>
+<li><code>PENDING</code>;</li>
+<li><code>STARTED</code>;</li>
+<li><code>SUCCESS</code>;</li>
+<li><code>FAILURE</code>.</li>
+</ul>
+<p>Если задача завершилась успешно, в ответ добавляется поле <code>result</code>.</p>
+<p>Пример успешного ответа:</p>
+<pre><code class="language-json">{
+  &quot;task_id&quot;: &quot;id-задачи&quot;,
+  &quot;status&quot;: &quot;SUCCESS&quot;,
+  &quot;result&quot;: {
+    &quot;message&quot;: &quot;Parsing completed&quot;,
+    &quot;url&quot;: &quot;https://mlh.io/seasons/2026/events&quot;,
+    &quot;title&quot;: &quot;Major League Hacking&quot;,
+    &quot;hackathon_id&quot;: 18
+  }
+}
+</code></pre>
+<h2 id="celery">Настройка Celery<a class="headerlink" href="#celery" title="Permanent link">&para;</a></h2>
+<p>Celery настроен в файле:</p>
+<pre><code class="language-text">lab3/app/celery_app.py
+</code></pre>
+<p>Создание Celery-приложения:</p>
+<pre><code class="language-python">celery_app = Celery(
+    &quot;lab3_parser_tasks&quot;,
+    broker=settings.CELERY_BROKER_URL,
+    backend=settings.CELERY_RESULT_BACKEND,
+)
+</code></pre>
+<p>В качестве broker используется Redis:</p>
+<pre><code class="language-text">redis://redis:6379/0
+</code></pre>
+<p>В качестве result backend также используется Redis:</p>
+<pre><code class="language-text">redis://redis:6379/1
+</code></pre>
+<p>Задача <code>parse_url_task</code> получает URL и вызывает parser-сервис:</p>
+<pre><code class="language-python">@celery_app.task(name=&quot;parse_url_task&quot;)
+def parse_url_task(url: str) -&gt; dict:
+</code></pre>
+<p>Внутри задачи выполняется POST-запрос:</p>
+<pre><code class="language-python">requests.post(
+    f&quot;{settings.PARSER_SERVICE_URL}/parse&quot;,
+    json={&quot;url&quot;: url},
+    timeout=60,
+)
+</code></pre>
+<p>То есть асинхронный режим работает так:</p>
+<ol>
+<li>клиент отправляет запрос в API;</li>
+<li>API кладет задачу в Redis;</li>
+<li>Celery worker забирает задачу;</li>
+<li>worker вызывает parser-сервис;</li>
+<li>parser сохраняет данные в PostgreSQL;</li>
+<li>результат задачи сохраняется в Redis;</li>
+<li>клиент проверяет статус по <code>task_id</code>.</li>
+</ol>
+<h2 id="_9">Периодические задачи<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>В <code>celery_app.py</code> также настроена периодическая задача:</p>
+<pre><code class="language-python">@celery_app.task(name=&quot;parse_default_sources_task&quot;)
+def parse_default_sources_task() -&gt; list[dict]:
+</code></pre>
+<p>Она запускает парсинг стандартных источников из списка <code>DEFAULT_URLS</code>.</p>
+<p>Расписание задается через <code>beat_schedule</code>:</p>
+<pre><code class="language-python">celery_app.conf.beat_schedule = {
+    &quot;parse-default-hackathon-sources-hourly&quot;: {
+        &quot;task&quot;: &quot;parse_default_sources_task&quot;,
+        &quot;schedule&quot;: crontab(minute=0),
+    },
+}
+</code></pre>
+<p>Это означает, что Celery Beat запускает задачу каждый час в нулевую минуту.</p>
+<h2 id="_10">Как запустить проект<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<p>Перейти в папку лабораторной работы:</p>
+<pre><code class="language-bash">cd students/k3339/Markozubova_Anastasia/lab3
+</code></pre>
+<p>Запустить все сервисы:</p>
+<pre><code class="language-bash">docker compose up --build
+</code></pre>
+<p>После запуска доступны:</p>
+<table>
+<thead>
+<tr>
+<th>Сервис</th>
+<th>Адрес</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Основной API</td>
+<td><code>http://localhost:8000/docs</code></td>
+</tr>
+<tr>
+<td>Parser service</td>
+<td><code>http://localhost:8001/docs</code></td>
+</tr>
+<tr>
+<td>PostgreSQL</td>
+<td><code>localhost:5433</code></td>
+</tr>
+<tr>
+<td>Redis</td>
+<td><code>localhost:6380</code></td>
+</tr>
+</tbody>
+</table>
+<p>Проверить список контейнеров:</p>
+<pre><code class="language-bash">docker compose ps
+</code></pre>
+<p>Посмотреть логи parser-сервиса:</p>
+<pre><code class="language-bash">docker compose logs parser
+</code></pre>
+<p>Посмотреть логи Celery worker:</p>
+<pre><code class="language-bash">docker compose logs celery_worker
+</code></pre>
+<h2 id="swagger">Проверка через Swagger<a class="headerlink" href="#swagger" title="Permanent link">&para;</a></h2>
+<p>Основной Swagger находится по адресу:</p>
+<pre><code class="language-text">http://localhost:8000/docs
+</code></pre>
+<h3 id="api">Проверка основного API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h3>
+<p>Выполнить:</p>
+<pre><code class="language-text">GET /
+</code></pre>
+<p>Ожидаемый ответ:</p>
+<pre><code class="language-json">{
+  &quot;message&quot;: &quot;Lab 3 API is running&quot;
+}
+</code></pre>
+<h3 id="_11">Проверка списка сохраненных записей<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>Выполнить:</p>
+<pre><code class="language-text">GET /hackathons
+</code></pre>
+<p>Если записей еще нет, вернется пустой список:</p>
+<pre><code class="language-json">[]
+</code></pre>
+<p>После парсинга в списке появятся сохраненные записи.</p>
+<h3 id="parser-_1">Проверка синхронного вызова parser-сервиса<a class="headerlink" href="#parser-_1" title="Permanent link">&para;</a></h3>
+<p>Выполнить:</p>
+<pre><code class="language-text">POST /parser/parse
+</code></pre>
+<p>Тело запроса:</p>
+<pre><code class="language-json">{
+  &quot;url&quot;: &quot;https://devpost.com/hackathons&quot;
+}
+</code></pre>
+<p>Пример ответа:</p>
+<pre><code class="language-json">{
+  &quot;message&quot;: &quot;Parsing completed&quot;,
+  &quot;url&quot;: &quot;https://devpost.com/hackathons&quot;,
+  &quot;title&quot;: &quot;New &amp; upcoming hackathons - Devpost&quot;,
+  &quot;hackathon_id&quot;: 17
+}
+</code></pre>
+<p>После этого нужно снова выполнить:</p>
+<pre><code class="language-text">GET /hackathons
+</code></pre>
+<p>Так можно проверить, что запись появилась в PostgreSQL.</p>
+<h3 id="celery_1">Проверка асинхронного вызова через Celery<a class="headerlink" href="#celery_1" title="Permanent link">&para;</a></h3>
+<p>Выполнить:</p>
+<pre><code class="language-text">POST /parser/tasks
+</code></pre>
+<p>Тело запроса:</p>
+<pre><code class="language-json">{
+  &quot;url&quot;: &quot;https://mlh.io/seasons/2026/events&quot;
+}
+</code></pre>
+<p>Пример ответа:</p>
+<pre><code class="language-json">{
+  &quot;task_id&quot;: &quot;6a7e8c6e-9d3b-4c2a-a7b4-111111111111&quot;,
+  &quot;status&quot;: &quot;queued&quot;
+}
+</code></pre>
+<p>Скопировать <code>task_id</code> и выполнить:</p>
+<pre><code class="language-text">GET /parser/tasks/{task_id}
+</code></pre>
+<p>Если задача уже завершилась, будет ответ:</p>
+<pre><code class="language-json">{
+  &quot;task_id&quot;: &quot;6a7e8c6e-9d3b-4c2a-a7b4-111111111111&quot;,
+  &quot;status&quot;: &quot;SUCCESS&quot;,
+  &quot;result&quot;: {
+    &quot;message&quot;: &quot;Parsing completed&quot;,
+    &quot;url&quot;: &quot;https://mlh.io/seasons/2026/events&quot;,
+    &quot;title&quot;: &quot;Major League Hacking&quot;,
+    &quot;hackathon_id&quot;: 18
+  }
+}
+</code></pre>
+<p>После этого снова выполнить:</p>
+<pre><code class="language-text">GET /hackathons
+</code></pre>
+<p>Новая запись должна быть в списке.</p>
+<h2 id="parser-_2">Проверка parser-сервиса напрямую<a class="headerlink" href="#parser-_2" title="Permanent link">&para;</a></h2>
+<p>Swagger parser-сервиса находится по адресу:</p>
+<pre><code class="language-text">http://localhost:8001/docs
+</code></pre>
+<p>Проверить работу сервиса:</p>
+<pre><code class="language-text">GET /
+</code></pre>
+<p>Ответ:</p>
+<pre><code class="language-json">{
+  &quot;message&quot;: &quot;Parser service is running&quot;
+}
+</code></pre>
+<p>Вызвать parser напрямую:</p>
+<pre><code class="language-text">POST /parse
+</code></pre>
+<p>Тело запроса:</p>
+<pre><code class="language-json">{
+  &quot;url&quot;: &quot;https://www.kaggle.com/competitions&quot;
+}
+</code></pre>
+<p>Пример ответа:</p>
+<pre><code class="language-json">{
+  &quot;message&quot;: &quot;Parsing completed&quot;,
+  &quot;url&quot;: &quot;https://www.kaggle.com/competitions&quot;,
+  &quot;title&quot;: &quot;Competitions&quot;,
+  &quot;hackathon_id&quot;: 19
+}
+</code></pre>
+<p>Этот сценарий показывает, что parser является отдельным сервисом и может принимать HTTP-запросы независимо от основного API.</p>
+<h2 id="_12">Что показывать на защите<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<p>На защите удобно идти в таком порядке:</p>
+<ol>
+<li>Открыть <code>docker-compose.yml</code> и показать сервисы <code>db</code>, <code>redis</code>, <code>parser</code>, <code>api</code>, <code>celery_worker</code>, <code>celery_beat</code>.</li>
+<li>Показать <code>Dockerfile.api</code> и <code>Dockerfile.parser</code>, объяснить, что это два разных FastAPI-приложения.</li>
+<li>Открыть <code>app/parser_service.py</code> и показать ручку <code>POST /parse</code>.</li>
+<li>Открыть <code>app/parser_logic.py</code> и показать функцию <code>parse_and_save_url</code>.</li>
+<li>Открыть <code>app/api_service.py</code> и показать ручки <code>/parser/parse</code>, <code>/parser/tasks</code>, <code>/parser/tasks/{task_id}</code> и <code>/hackathons</code>.</li>
+<li>Открыть <code>app/celery_app.py</code> и показать Celery task, Redis broker и расписание Celery Beat.</li>
+<li>Запустить проект через <code>docker compose up --build</code>.</li>
+<li>В Swagger выполнить синхронный парсинг через <code>POST /parser/parse</code>.</li>
+<li>Проверить сохранение результата через <code>GET /hackathons</code>.</li>
+<li>Выполнить асинхронный парсинг через <code>POST /parser/tasks</code>.</li>
+<li>Проверить статус задачи через <code>GET /parser/tasks/{task_id}</code>.</li>
+<li>Еще раз проверить <code>GET /hackathons</code>.</li>
+</ol>
+<h2 id="_13">Вывод<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<p>В ходе лабораторной работы было создано приложение из нескольких Docker-контейнеров. Основной FastAPI-сервис принимает запросы пользователя, отдельный parser-сервис выполняет парсинг страниц, PostgreSQL хранит результаты, Redis используется как брокер очереди, Celery worker выполняет задачи в фоне, а Celery Beat запускает периодический парсинг по расписанию.</p>
+<p>Был реализован синхронный сценарий, когда API сразу вызывает parser-сервис и возвращает результат клиенту. Также был реализован асинхронный сценарий, когда API ставит задачу в очередь Celery и возвращает <code>task_id</code>, по которому можно проверить статус выполнения. Результаты обоих вариантов сохраняются в таблицу <code>hackathons</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
