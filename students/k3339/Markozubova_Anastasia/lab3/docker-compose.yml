@@ -1,0 +1,93 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: lab3_db
+    environment:
+      POSTGRES_DB: hackathon_lab3
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - "5433:5432"
+    volumes:
+      - lab3_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d hackathon_lab3"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    container_name: lab3_redis
+    ports:
+      - "6380:6379"
+
+  parser:
+    build:
+      context: .
+      dockerfile: Dockerfile.parser
+    container_name: lab3_parser
+    environment:
+      DATABASE_URL: postgresql+psycopg://postgres:1234@db:5432/hackathon_lab3
+    ports:
+      - "8001:8001"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: lab3_api
+    environment:
+      DATABASE_URL: postgresql+psycopg://postgres:1234@db:5432/hackathon_lab3
+      PARSER_SERVICE_URL: http://parser:8001
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/1
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+      parser:
+        condition: service_started
+      redis:
+        condition: service_started
+
+  celery_worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: lab3_celery_worker
+    command: celery -A app.celery_app.celery_app worker --loglevel=info
+    environment:
+      DATABASE_URL: postgresql+psycopg://postgres:1234@db:5432/hackathon_lab3
+      PARSER_SERVICE_URL: http://parser:8001
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/1
+    depends_on:
+      parser:
+        condition: service_started
+      redis:
+        condition: service_started
+
+  celery_beat:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: lab3_celery_beat
+    command: celery -A app.celery_app.celery_app beat --loglevel=info
+    environment:
+      DATABASE_URL: postgresql+psycopg://postgres:1234@db:5432/hackathon_lab3
+      PARSER_SERVICE_URL: http://parser:8001
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/1
+    depends_on:
+      redis:
+        condition: service_started
+      celery_worker:
+        condition: service_started
+
+volumes:
+  lab3_postgres_data:
